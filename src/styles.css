@@ -1,0 +1,64 @@
+/* src/styles.css */
+
+/* Estilo para a tabela */
+table {
+    width: 90%;
+    border-collapse: collapse;
+   
+}
+  
+  th, td {
+    border: 1px solid rgba(50, 99, 120, 0.48);
+    padding: 8px;
+    text-align: center;
+    color: white;
+  }
+  
+  th {
+    background-color:rgba(50, 99, 120, 0.48);
+    color: white;
+  }
+  
+  /* Estilo para o corpo da página */
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Faz o corpo ocupar 100% da altura da janela */
+    width: 100vw; /* Faz o corpo ocupar 100% da largura da janela */
+    overflow: hidden; /* Remove a barra de rolagem */
+    font-family: Arial, sans-serif;
+    background-image: url('../src/assets/images/Plano\ de\ fundo.png'); /* Caminho para a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-repeat: no-repeat; /* Não repete a imagem de fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilo para o container que envolve o conteúdo */
+  .container {
+    width: 96vw; /* O retângulo ocupará 95% da largura da tela */
+    height: 93vh; /* O retângulo ocupará 95% da altura visível da tela */
+    background-color: rgba(50, 99, 120, 0.48); /* Fundo branco com opacidade de 80% */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor */
+    padding: 20px; /* Espaçamento interno */
+    overflow-y: auto; /* Permite rolagem interna se necessário */
+    margin: 0; /* Remove qualquer margem externa */
+    position: relative; /* Para poder usar z-index se necessário */
+  }
+  
+
+  .cabeca img {
+    width: 100px; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da altura */
+    margin-bottom: -1%;
+  }
+  
+  a{
+    color: white;
+    text-decoration: none;
+    transition:  0.3s;
+  }
+  

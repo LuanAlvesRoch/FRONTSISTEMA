@@ -1,0 +1,50 @@
+<div style="display: flex; gap: 30px;  ">
+    <input 
+      type="text" 
+      placeholder="Pesquisar..."  
+      [(ngModel)]="pesquisa" 
+      style="width: 30%; padding: 10px; margin-bottom: 20px; border-radius:4px; border-color: rgb(98, 152, 205); margin-top: 25px;"
+    />
+
+    <nav style="margin-top: 19px;">
+      <a id="add" class="waves-effect waves-light btn green" routerLink="/adicionar-user">
+        <i class="material-icons right">add</i>
+      </a>
+    </nav>
+</div>
+<table class="tabela">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Senha</th>
+        <th>Deletar</th>
+        <th>Editar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let funcionario of filteredFuncionarios">
+        <td>{{ funcionario.id }}</td>
+        <td>{{ funcionario.nome }}</td>
+        <td>{{ funcionario.email }}</td>
+        <td>{{ funcionario.senha }}</td>
+
+        <td>
+          <!-- Ícone de lixeira para deletar -->
+          <button class="button" (click)="deleteFuncionario(funcionario.id)">
+            <i class="material-icons">delete</i>
+          </button>
+        </td>
+        <td>
+          <nav>
+            <!-- Botão para editar o produto -->
+            <a class="edit" [routerLink]="['/editar-user', funcionario.id]" >
+              <i class="material-icons">edit</i>
+            </a>
+        </nav>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  

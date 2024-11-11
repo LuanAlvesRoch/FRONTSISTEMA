@@ -1,0 +1,36 @@
+<div class="grid-container">
+    <div class="container">
+      <div class="form">
+        
+        <h2>Aditar Funcionario: {{ funcionario.nome }}</h2>
+      
+        <form (ngSubmit)="salvarAlteracoes()">
+        
+          <div class="input-field col s6">
+            <label for="nome">Nome:</label>
+            <input id="nome" [(ngModel)]="funcionario.nome" name="nome" required>
+          </div>
+      
+          <div class="input-field col s6">
+            <label for="email">Email:</label>
+            <input id="email" [(ngModel)]="funcionario.email" name="email" required>
+          </div>
+    
+          <div class="input-field col s6">
+            <label for="senha">Senha:</label>
+            <input id="senha"  [(ngModel)]="funcionario.senha" name="senha" required>
+          </div>
+      
+        </form>
+        <form (ngSubmit)="salvarAlteracoes()" class="form">
+            <div style="display: flex; justify-content: center; align-items: center;margin-top: 20px; height: 100%;">
+                <button type="submit" class="button">
+                    <span class="button__text">Aditar</span>
+                    <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                </button>
+            </div>
+        </form>
+        
+      </div>
+  c
+  

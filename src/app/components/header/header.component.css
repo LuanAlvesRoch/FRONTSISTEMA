@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+nav {
+  flex-wrap: wrap;
+  display: flex;              /* Alinha a imagem e o grupo de botões lado a lado */
+  align-items: center;        /* Centraliza verticalmente */
+  position: relative; /* Define o nav como referência para o posicionamento absoluto */
+  padding: 1px;              /* Adiciona espaçamento ao contêiner */
+}
+
+/* From Uiverse.io by mrhyddenn */ 
+.loader {
+  position: absolute; /* Fixar o HydraTec em uma posição específica */
+  left: 130px; /* Ajuste para a posição horizontal desejada */
+  top: 50%; /* Centraliza verticalmente dentro do nav */
+  transform: translateY(-50%); /* Ajusta para centralizar exatamente no meio */
+}
+
+.loader span {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  position: absolute;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+.loader span:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 0.3px rgb(128, 198, 255);
+}
+
+.loader span:nth-child(2) {
+  color: rgb(128, 198, 255);
+  -webkit-text-stroke: 1px rgb(128, 198, 255);
+  animation: uiverse723 3s ease-in-out infinite;
+}
+
+@keyframes uiverse723 {
+  0%, 100% {
+    clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 
+     54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+
+  50% {
+    clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 
+     51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
+
+
+
+/* From Uiverse.io by SoloResearchLab */ 
+/* From Uiverse.io by SoloResearchLab */ 
+.button-group {
+  display: flex;
+  background-color: white;
+  margin-left: 74%;
+  padding: 10px; /* 1.25rem assuming base font size is 12px */
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+.button-container {
+  display: flex;
+  width: 100%;
+  padding: 10px; /* 1.5rem */
+  border-radius: 10px;
+}
+
+.button-container a {
+  color: #3b82f6; /* light-blue-light */
+  border: 2px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 20px; /* 4 * 5 (assuming 1 unit = 5px) */
+  padding: 10px; /* 2.5 * 4 */
+  background-color: #f3f4f6; /* light-secondary */
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 9999px;
+  font-size: 14px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.button-container a:last-child {
+  margin-right: 0;
+}
+
+.button-container a:hover {
+  color: black;
+  border-color: #3b82f6; /* light-blue-light */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-container a svg {
+  width: 20px; /* 5 * 4 */
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+  .button-group {
+    background-color: #485d7b; /* box-dark */
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.5),
+      0px 2px 4px -1px rgba(0, 0, 0, 0.3);
+  }
+
+  .button-container {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .button-container a {
+    color: #9ca3af; /* gray-400 */
+    background-color: #374151; /* button-curved-default-dark */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  }
+
+  .button-container a:hover,
+  .button-container a:focus,
+  .button-container a:active {
+    background-color: #4b5563; /* button-curved-pressed-dark */
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+}
+
+
+  

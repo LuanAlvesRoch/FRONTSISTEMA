@@ -1,0 +1,16 @@
+<!-- src/app/categorias/categorias.component.html -->
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome da Categoria</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let categoria of categorias">
+        <td>{{ categoria.id }}</td>
+        <td>{{ categoria.nome }}</td>
+      </tr>
+    </tbody>
+  </table>
+  

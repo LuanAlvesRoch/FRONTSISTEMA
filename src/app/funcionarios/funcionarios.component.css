@@ -1,0 +1,88 @@
+.tabela {
+    width: 65%;
+    border-collapse: collapse;
+   
+}
+  
+.tabela  th, td {
+    border: 1px solid rgba(50, 99, 120, 0.48);
+    padding: 8px;
+    text-align: center;
+    color: white;
+}
+  
+.tabela  th {
+    background-color:rgba(50, 99, 120, 0.48);
+    color: white;
+}
+
+#add {
+    border-radius: 20px;
+    display: inline-flex; /* Para alinhar o ícone e o texto */
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+}
+#add i {
+    font-size: 34px; /* Aumentando o tamanho do ícone */
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    margin-left: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+  
+#add:hover {
+    background-color: #326c9b; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento do botão */
+    border-radius: 20px;
+}
+.waves-effect {
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+.button{
+    background-color: #326c9b;
+    border-radius: 10px;
+    display: inline-flex; /* Para alinhar o ícone e o texto */
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    border: none;
+  }
+
+  .button i{
+    margin-right: 3px; /* Espaço entre o ícone e o texto */
+    margin-left: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+
+  .button:hover{
+    background-color: rgb(193, 79, 79);/* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento do botão */
+  }
+
+  .edit{
+    
+    background-color: #326c9b;
+    border-radius: 10px;
+    display: inline-flex; /* Para alinhar o ícone e o texto */
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+  }
+
+  .edit i{
+    margin-right: 5px; /* Espaço entre o ícone e o texto */
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+  }
+
+  .edit:hover{
+    background-color: rgb(193, 79, 79);/* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento do botão */
+  }

@@ -1,0 +1,162 @@
+form {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 3 colunas */
+    gap: 20px; /* Espaçamento entre os elementos */
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .form{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 3 colunas */
+  }
+  
+  
+    label {
+      color: aliceblue;
+      font-size: 18px;
+      font-family: Arial, sans-serif;  
+      letter-spacing: 1px;    
+      font-weight: bold;         
+    }
+
+    #nome{
+        border: 2px solid transparent;
+        width: 15em;
+        height: 2.5em;
+        padding-left: 0.8em;
+        outline: none;
+        overflow: hidden;
+        background-color: #F3F3F3;
+        border-radius: 10px;
+        transition: all 0.5s;
+      }
+    
+      #nome:hover,
+      #nome:focus {
+        border: 2px solid #4A9DEC;
+        box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+        background-color: white;
+      }
+    
+      #email{
+        border: 2px solid transparent;
+        width: 15em;
+        height: 2.5em;
+        padding-left: 0.8em;
+        outline: none;
+        overflow: hidden;
+        background-color: #F3F3F3;
+        border-radius: 10px;
+        transition: all 0.5s;
+      }
+    
+      #email:hover,
+      #email:focus {
+        border: 2px solid #4A9DEC;
+        box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+        background-color: white;
+      }
+      
+      #senha{
+        border: 2px solid transparent;
+        width: 15em;
+        height: 2.5em;
+        padding-left: 0.8em;
+        outline: none;
+        overflow: hidden;
+        background-color: #F3F3F3;
+        border-radius: 10px;
+        transition: all 0.5s;
+      }
+    
+      #senha:hover,
+      #senha:focus {
+        border: 2px solid #4A9DEC;
+        box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+        background-color: white;
+      }
+
+      h2{
+        color: white;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+      /* From Uiverse.io by andrew-demchenk0 */ 
+.button {
+    border-radius:10px ;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #34974d;
+    background-color: #32ad9f;
+  }
+  
+  .button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .button .button__text {
+    transform: translateX(30px);
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .button .button__icon {
+    border-radius: 10px;
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: #34974d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .svg {
+    width: 30px;
+    stroke: #fff;
+  }
+  
+  .button:hover {
+    background: #34974d;
+  }
+  
+  .button:hover .button__text {
+    color: transparent;
+  }
+  
+  .button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .button:active .button__icon {
+    background-color: #2e8644;
+  }
+  
+  .button:active {
+    border: 1px solid #2e8644;
+  }
+      
+      .grid-container {
+        display: grid;                /* Ativa o grid */
+        place-items: center;          /* Alinha itens tanto horizontalmente quanto verticalmente */
+        height: 65vh;                /* Define a altura do contêiner para 100% da altura da viewport */
+    }
+    
+    .container {
+        width: 50vw; /* O retângulo ocupará 50% da largura da tela */
+        height: 47vh; /* O retângulo ocupará 47% da altura visível da tela */
+        background-color: rgba(50, 99, 120, 0.48); /* Fundo com opacidade */
+        border-radius: 10px; /* Cantos arredondados */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor */
+        padding: 20px; /* Espaçamento interno */
+        overflow-y: auto; /* Permite rolagem interna se necessário */
+        margin: 0; /* Remove qualquer margem externa */
+        position: relative; /* Para poder usar z-index se necessário */
+    }

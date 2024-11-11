@@ -1,0 +1,57 @@
+<div style="display: flex; gap: 30px;  ">
+    <input 
+      class="input" 
+      placeholder="Pesquisar..."  
+      [(ngModel)]="searchTerm" 
+      
+    />
+
+    <nav style="margin-top: 19px;">
+      <a id="add" class="waves-effect waves-light btn green" routerLink="/adicionar">
+        <i class="material-icons right">add</i>
+      </a>
+    </nav>
+</div>
+
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Categoria</th>
+        <th>Nome do Produto</th>
+        <th>Descrição</th>
+        <th>Qtd</th>
+        <th>Preço</th>
+        <th>Imposto</th>
+        <th>Preço Final</th>
+        <th>Deletar</th> <!-- Nova coluna para a ação de deletar -->
+        <th>Editar</th> <!-- Nova coluna para a ação de editar -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let produto of filteredProdutos">
+        <td>{{ produto.categoria_nome }}</td>
+        <td>{{ produto.produto_nome }}</td>
+        <td>{{ produto.descricao }}</td>
+        <td>{{ produto.quantidade_em_estoque }}</td>
+        <td>{{ produto.preco }}</td>
+        <td>{{ produto.imposto }}</td>
+        <td>{{ produto.preco_final  }}</td>
+        <td>
+          <!-- Ícone de lixeira para deletar -->
+          <button class="button" (click)="deleteProduto(produto.id)">
+            <i class="material-icons">delete</i>
+          </button>
+        </td>
+        <td>
+          <nav>
+              <!-- Botão para editar o produto -->
+            <a class="edit" [routerLink]="['/editar', produto.id]" >
+              <i class="material-icons">edit</i>
+            </a>
+          </nav>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
